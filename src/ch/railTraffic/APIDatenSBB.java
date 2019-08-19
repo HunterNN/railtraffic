@@ -21,7 +21,7 @@ public class APIDatenSBB {
 	protected ArrayList<RailTrafficDatasetFields> actRecords = new ArrayList<>();
 	private ArrayList<String> preRecords = new ArrayList<>();
 	
-	// Konstruktor
+	// Konstruktor for creating API class
 	APIDatenSBB(String maxRowsValue){
 		this.loadData(maxRowsValue);
 	}
@@ -31,7 +31,7 @@ public class APIDatenSBB {
 		String API_URL_prepare;
 		URL url;
 		try {
-			// Block für den Selektor "unlimited"
+			// Block fï¿½r den Selektor "unlimited"
 			if(maxRowsValue.equals("unlimmited")) {
 				if(importRecords.getNhits() > 0) {
 					API_URL_prepare = API_URL_parameter + importRecords.getNhits();
