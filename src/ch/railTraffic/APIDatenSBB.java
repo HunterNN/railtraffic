@@ -21,7 +21,7 @@ public class APIDatenSBB {
 	protected ArrayList<RailTrafficDatasetFields> actRecords = new ArrayList<>();
 	private ArrayList<String> preRecords = new ArrayList<>();
 	
-	// Konstruktor for creating API class
+	// Konstruktor 
 	APIDatenSBB(String maxRowsValue){
 		this.loadData(maxRowsValue);
 	}
